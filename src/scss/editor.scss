@@ -1,0 +1,36 @@
+.faq-questions-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f4f4f4;
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &--remove {
+      color: #dc3232;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+
+  &--single-faq {
+    background: lightgray;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    &--remove {
+      color: #dc3232;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
