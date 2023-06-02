@@ -1,3 +1,4 @@
+import "./../scss/editor.scss";
 /**
  * WordPress dependencies
  */
@@ -22,11 +23,12 @@ export default class Home extends Component {
   }
 
   render() {
-    const { attributes, setAttributes } = this.props;
+    let { attributes, setAttributes } = this.props;
     return (
       <div className="adeleye-faq-block-element">
         <TextControl
           label="Header Title"
+          placeholder="Header Title"
           value={attributes.headerTitle}
           onChange={(headerTitle) => setAttributes({ headerTitle })}
           style={{ fontSize: "20px" }}
@@ -51,26 +53,45 @@ export default class Home extends Component {
             return (
               <div className="faq-questions-container--single-faq">
                 <TextControl
-                  label="Question"
+                  label="Question:"
                   value={faqData.question}
                   placeholder="Question"
                   onChange={(question) => {
-                    let faqDatas = attributes.faqDatas;
-                    faqDatas[index].question = question;
-                    setAttributes({ faqDatas });
+                    let faqDatasNew = [...this.props.attributes.faqDatas]; // Create a new array instead of referencing the existing one
+                    faqDatasNew[index] = {
+                      ...faqDatasNew[index],
+                      question: question
+                    }; // Update the specific item in the array
+                    setAttributes({ faqDatas: faqDatasNew });
                   }}
                 />
                 <TextareaControl
-                  label="Answer"
+                  label="Answer:"
                   value={faqData.answer}
                   placeholder="Answer"
                   onChange={(answer) => {
-                    let faqDatas = attributes.faqDatas;
-                    faqDatas[index].answer = answer;
-                    setAttributes({ faqDatas });
+                    let faqDatasNew = [...this.props.attributes.faqDatas]; // Create a new array instead of referencing the existing one
+                    faqDatasNew[index] = {
+                      ...faqDatasNew[index],
+                      answer: answer
+                    }; // Update the specific item in the array
+                    setAttributes({ faqDatas: faqDatasNew });
                   }}
                 />
-                <p className="faq-questions-container--single-faq--remove">
+                <p
+                  className="faq-questions-container--single-faq--remove"
+                  onClick={() => {
+                    let faqDatasNew = [...this.props.attributes.faqDatas]; // Create a new array instead of referencing the existing one
+                    faqDatasNew.splice(index, 1); // Remove the specific element from the array
+                    setAttributes({ faqDatas: faqDatasNew });
+                    //toast
+                    wp.data
+                      .dispatch("core/notices")
+                      .createNotice("success", "Question has been removed", {
+                        type: "snackbar",
+                        isDismissible: true
+                      });
+                  }}>
                   <span className="dashicons dashicons-trash"></span> Remove
                   Question
                 </p>

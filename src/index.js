@@ -1,6 +1,7 @@
 import "./scss/style.scss";
 import "./scss/editor.scss";
 import Home from "./components/Home";
+import { FrontEnd } from "./components/FrontEnd";
 
 const { __ } = wp.i18n;
 const { Fragment } = wp.element;
@@ -53,25 +54,6 @@ registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
   },
 
   save: function (props) {
-    const { attributes } = props;
-    return (
-      <div className="adeleye-faq-block-element">
-        <h2 className="adeleye-faq-block-element__header">
-          {attributes.headerTitle}
-        </h2>
-        {attributes.faqDatas.map((faqData, index) => {
-          return (
-            <div className="adeleye-faq-block-element__faq">
-              <h3 className="adeleye-faq-block-element__question">
-                {faqData.question}
-              </h3>
-              <p className="adeleye-faq-block-element__answer">
-                {faqData.answer}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-    );
+    return <FrontEnd {...props} />;
   }
 });
