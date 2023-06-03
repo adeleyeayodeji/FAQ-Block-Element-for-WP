@@ -31,6 +31,10 @@ class FAQBlockElementAdeleye
 
     private $slug;
 
+    /**
+     * Constructor
+     * @param string $slug
+     */
     public function __construct($slug)
     {
 
