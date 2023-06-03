@@ -1,7 +1,6 @@
 import "./scss/style.scss";
 import "./scss/editor.scss";
 import Home from "./components/Home";
-import { FrontEnd } from "./components/FrontEnd";
 
 const { __ } = wp.i18n;
 const { Fragment } = wp.element;
@@ -31,7 +30,8 @@ registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
 
   attributes: {
     headerTitle: {
-      type: "string"
+      type: "string",
+      default: "Frequently Asked Questions"
     },
     faqDatas: {
       type: "array",
@@ -41,6 +41,30 @@ registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
           answer: ""
         }
       ]
+    },
+    headertitleColor: {
+      type: "string",
+      default: "#333333"
+    },
+    faqwidth: {
+      type: "string",
+      default: "48rem"
+    },
+    faqpadding: {
+      type: "string",
+      default: "4rem"
+    },
+    innerheadertitleColor: {
+      type: "string",
+      default: "#7288a2"
+    },
+    innerheaderhoveractiveColor: {
+      type: "string",
+      default: "#03b5d2"
+    },
+    innertextColor: {
+      type: "string",
+      default: "#4d5974"
     }
   },
 
@@ -54,6 +78,6 @@ registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
   },
 
   save: function (props) {
-    return <FrontEnd {...props} />;
+    return null;
   }
 });

@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
-$bg: #fff;
-$text: #7288a2;
-$gray: #4d5974;
-$lightgray: #e5e5e5;
-$blue: #03b5d2;
+$adeleye-faq-bg: #fff;
+$adeleye-faq-text: #7288a2;
+$adeleye-faq-gray: #4d5974;
+$adeleye-faq-lightgray: #e5e5e5;
+$adeleye-faq-blue: #03b5d2;
 
 .faq-block-element-for-wp-frontend {
   margin: 0;
   padding: 0;
   font-family: "Hind", sans-serif;
-  background: $bg;
-  color: $gray;
+  background: $adeleye-faq-bg;
+  color: $adeleye-faq-gray;
   display: flex;
   min-height: 100vh;
 
@@ -31,9 +31,9 @@ $blue: #03b5d2;
 
   .accordion {
     .accordion-item {
-      border-bottom: 1px solid $lightgray;
+      border-bottom: 1px solid $adeleye-faq-lightgray;
       button[aria-expanded="true"] {
-        border-bottom: 1px solid $blue;
+        border-bottom: 1px solid $adeleye-faq-blue;
       }
     }
     button {
@@ -42,7 +42,7 @@ $blue: #03b5d2;
       text-align: left;
       width: 100%;
       padding: 1em 0;
-      color: $text;
+      color: $adeleye-faq-text;
       font-size: 1.15rem;
       font-weight: 400;
       border: none;
@@ -51,11 +51,11 @@ $blue: #03b5d2;
       &:hover,
       &:focus {
         cursor: pointer;
-        color: $blue;
+        color: $adeleye-faq-blue;
         &::after {
           cursor: pointer;
-          color: $blue;
-          border: 1px solid $blue;
+          color: $adeleye-faq-blue;
+          border: 1px solid $adeleye-faq-blue;
         }
       }
       .accordion-title {
@@ -93,7 +93,7 @@ $blue: #03b5d2;
       }
     }
     button[aria-expanded="true"] {
-      color: $blue;
+      color: $adeleye-faq-blue;
       .icon {
         &::after {
           width: 0;

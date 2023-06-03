@@ -1,2 +1,114 @@
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css?family=Hind:300,400&display=swap);
-.faq-block-element-for-wp-frontend{background:#fff;color:#4d5974;display:flex;font-family:Hind,sans-serif;margin:0;min-height:100vh;padding:0}.faq-block-element-for-wp-frontend *,.faq-block-element-for-wp-frontend :after,.faq-block-element-for-wp-frontend :before{box-sizing:border-box}.faq-block-element-for-wp-frontend .container{margin:0 auto;padding:4rem;width:48rem}.faq-block-element-for-wp-frontend .accordion .accordion-item{border-bottom:1px solid #e5e5e5}.faq-block-element-for-wp-frontend .accordion .accordion-item button[aria-expanded=true]{border-bottom:1px solid #03b5d2}.faq-block-element-for-wp-frontend .accordion button{background:none;border:none;color:#7288a2;display:block;font-size:1.15rem;font-weight:400;outline:none;padding:1em 0;position:relative;text-align:left;width:100%}.faq-block-element-for-wp-frontend .accordion button:focus,.faq-block-element-for-wp-frontend .accordion button:hover{color:#03b5d2;cursor:pointer}.faq-block-element-for-wp-frontend .accordion button:focus:after,.faq-block-element-for-wp-frontend .accordion button:hover:after{border:1px solid #03b5d2;color:#03b5d2;cursor:pointer}.faq-block-element-for-wp-frontend .accordion button .accordion-title{padding:1em 1.5em 1em 0}.faq-block-element-for-wp-frontend .accordion button .icon{border:1px solid;border-radius:22px;display:inline-block;height:22px;position:absolute;right:0;top:18px;width:22px}.faq-block-element-for-wp-frontend .accordion button .icon:before{background:currentColor;content:"";display:block;height:2px;left:5px;position:absolute;top:9px;width:10px}.faq-block-element-for-wp-frontend .accordion button .icon:after{background:currentColor;content:"";display:block;height:10px;left:9px;position:absolute;top:5px;width:2px}.faq-block-element-for-wp-frontend .accordion button[aria-expanded=true]{color:#03b5d2}.faq-block-element-for-wp-frontend .accordion button[aria-expanded=true] .icon:after{width:0}.faq-block-element-for-wp-frontend .accordion button[aria-expanded=true]+.accordion-content{max-height:9em;opacity:1;transition:all .2s linear;will-change:opacity,max-height}.faq-block-element-for-wp-frontend .accordion .accordion-content{max-height:0;opacity:0;overflow:hidden;transition:opacity .2s linear,max-height .2s linear;will-change:opacity,max-height}.faq-block-element-for-wp-frontend .accordion .accordion-content p{font-size:1rem;font-weight:300;margin:2em 0}
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/style.scss (1) ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+.faq-block-element-for-wp-frontend {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind", sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: flex;
+  min-height: 100vh;
+}
+.faq-block-element-for-wp-frontend * {
+  box-sizing: border-box;
+}
+.faq-block-element-for-wp-frontend *::before, .faq-block-element-for-wp-frontend *::after {
+  box-sizing: border-box;
+}
+.faq-block-element-for-wp-frontend .container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+.faq-block-element-for-wp-frontend .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.faq-block-element-for-wp-frontend .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #03b5d2;
+}
+.faq-block-element-for-wp-frontend .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.faq-block-element-for-wp-frontend .accordion button:hover, .faq-block-element-for-wp-frontend .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.faq-block-element-for-wp-frontend .accordion button:hover::after, .faq-block-element-for-wp-frontend .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.faq-block-element-for-wp-frontend .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.faq-block-element-for-wp-frontend .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.faq-block-element-for-wp-frontend .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.faq-block-element-for-wp-frontend .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.faq-block-element-for-wp-frontend .accordion button[aria-expanded=true] {
+  color: #03b5d2;
+}
+.faq-block-element-for-wp-frontend .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.faq-block-element-for-wp-frontend .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq-block-element-for-wp-frontend .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq-block-element-for-wp-frontend .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
