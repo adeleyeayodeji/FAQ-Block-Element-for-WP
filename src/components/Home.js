@@ -1,4 +1,3 @@
-import "./../scss/editor.scss";
 import { Fragment } from "@wordpress/element";
 import Inspector from "./Inspector";
 /**
@@ -9,6 +8,7 @@ const { TextareaControl, Button, TextControl, Notice } = wp.components;
 
 /**
  * Internal dependencies
+ * Home component
  */
 export default class Home extends Component {
   //remove all questions

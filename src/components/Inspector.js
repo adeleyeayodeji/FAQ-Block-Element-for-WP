@@ -1,6 +1,11 @@
 import { InspectorControls, PanelColorSettings } from "@wordpress/block-editor";
 const { __ } = wp.i18n;
 import { PanelBody, TextControl } from "@wordpress/components";
+/**
+ * Internal dependencies
+ * Inspector controls
+ * @param {*} props
+ */
 export default function Inspector(props) {
   const { attributes, setAttributes } = props;
   return (

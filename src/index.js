@@ -6,6 +6,10 @@ const { __ } = wp.i18n;
 const { Fragment } = wp.element;
 const { registerBlockType } = wp.blocks;
 
+/**
+ * Internal dependencies
+ * Register block
+ */
 registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
   title: __("FAQ Block", "faq-block-element-for-wp"),
   description: __(
@@ -67,7 +71,11 @@ registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
       default: "#4d5974"
     }
   },
-
+  /**
+   * Edit the attributes and markup
+   * @param {*} props
+   * @returns
+   */
   edit: function (props) {
     const { attributes } = props;
     return (
@@ -76,7 +84,11 @@ registerBlockType("adeleyeayodeji/faq-block-element-for-wp", {
       </Fragment>
     );
   },
-
+  /**
+   * Save the attributes and markup
+   * @param {*} props
+   * @returns
+   */
   save: function (props) {
     return null;
   }
